@@ -143,6 +143,14 @@ header p {
     text-align: center;
 }
 
+.iconos{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  
+}
 
 
 /* Acerca de nosotros */
