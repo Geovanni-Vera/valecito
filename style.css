@@ -41,8 +41,8 @@ body {
     margin: 20px auto;
     max-width: 1200px;
 }
-.c-white{
-    color: #fff;
+.c-yellow{
+    color: #ffcc33;
 }
 .pd-20{
     padding: 30px;
@@ -57,7 +57,7 @@ header {
     background-color: #ffcc33;
     text-align: center;
     padding: 40px 0;
-    color: #fff;
+    color: #000;
 }
 
 header h1 {
@@ -89,11 +89,13 @@ header p {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .categories li {
     margin: 0 20px;
+    padding-top: 20px;
 }
 
 .categories a {
@@ -134,8 +136,13 @@ header p {
 
 /* Información de contacto */
 #contact {
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     padding: 40px 0;
+}
+.c-white{
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .contact .container h2 {
@@ -156,14 +163,28 @@ header p {
 /* Acerca de nosotros */
 #about {
     background-color: #ffcc33;
-    color: #fff;
+    color: #000;
     padding: 40px 0;
 }
 
 #about h2 {
     font-size: 30px;
 }
+.ctn-footer{
+    display: flex;
+    flex-direction: column;
+}
 
+.adrees{
+    color: #ffcc33;
+    
+}
+
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 /* Estilos de medios pequeños (por ejemplo, dispositivos móviles) */
 @media (max-width: 768px) {
     header h1 {
@@ -185,6 +206,7 @@ header p {
 
     .categories li {
         margin: 10px 0;
+        padding-top: 5px;
     }
 
     .categories a {
@@ -194,3 +216,5 @@ header p {
         grid-template-columns: 1fr;
     }
 }
+
+
