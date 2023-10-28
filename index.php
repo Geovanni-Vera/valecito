@@ -17,28 +17,9 @@ include 'php/templates/header.php';
     <div class="container pd-20">
         <?php include 'php/templates/menunav.php' ?>
 
-        <?php include 'php/templates/menu/hamburguesas.php' ?>
+        <?php include 'php/templates/menu/menu.php' ?>
         <!-- hotdogs -->
-        <?php include 'php/templates/menu/hotdog.php' ?>
-
-        <!-- Alitas -->
-        <?php include 'php/templates/menu/alitas.php' ?>
-        <!-- Boneles -->
-        <?php include 'php/templates/menu/boneless.php' ?>
-        <!-- Costillas -->
-        <?php include 'php/templates/menu/costillas.php' ?>
-
-        <!-- Banderillas -->
-        <?php include 'php/templates/menu/banderillas.php' ?>
-        <!-- Papas Fritas -->
-        <?php include 'php/templates/menu/acompañamientos.php' ?>
-
-        <!-- Bebidas -->
-        <?php include 'php/templates/menu/bebidas.php' ?>
-        <!-- Malteadas -->
-        <?php include 'php/templates/menu/malteadas.php' ?>
-        <!-- sodas -->
-        <?php include 'php/templates/menu/sodas.php' ?>
+        
     </div>
 </section>
 

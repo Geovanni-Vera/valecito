@@ -1,19 +1,24 @@
 /* Estilos generales */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 html {
-   
-    box-sizing: border-box;   
+
+    box-sizing: border-box;
 }
-*,*::before,*::after{
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #000;
@@ -29,62 +34,76 @@ body {
     padding: 20px;
 }
 
-.center{
+.center {
     text-align: center;
 }
-.mt-20{
+
+.mt-20 {
     margin-top: 60px;
 }
-.m{
+
+.m {
     margin: 20px auto;
 }
-.sp-yellow{
+
+.sp-yellow {
     color: #ffcc33;
     font-weight: bold;
 }
-.title{
+
+.title {
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(31 41 55);
 }
-.grid{
+
+.grid {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px; 
+    grid-gap: 20px;
 }
-.center-ctn{
+
+.center-ctn {
     width: 90%;
     margin: 20px auto;
     max-width: 1200px;
 }
-.c-yellow{
+
+.c-yellow {
     color: #ffcc33;
 }
-.c-white{
+
+.c-white {
     color: #fff;
 }
-.pd-20{
+
+.pd-20 {
     padding: 30px;
 }
-.m-10px{
+
+.m-10px {
     margin: 10px 0;
 }
-.ctn{
+
+.ctn {
     border: 1px solid #000;
     padding: 10px;
     margin: 20px 0;
 }
-.capitalize{
+
+.capitalize {
     text-transform: uppercase;
 }
-.contenedor{
+
+.contenedor {
     margin: 20px auto;
     width: 80%;
     padding: 20px;
 
 }
-.bg-yellow{
+
+.bg-yellow {
     background-color: #ffcc33;
 }
 
@@ -92,7 +111,7 @@ body {
 .header {
     background-color: #ffcc33;
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -124,7 +143,7 @@ body {
     background-color: #272626;
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 15rem;
     background-repeat: no-repeat;
@@ -132,19 +151,20 @@ body {
     margin-bottom: 0;
     background-position: center;
 }
-.ur-1{
-   
+
+.ur-1 {
+
     background-image: url(../imagenes/1.jpg);
-    
-    
+
+
 }
 
-.ur-2{
+.ur-2 {
     background-image: url(../imagenes/2.jpg);
 }
 
-@media (min-width: 769px){
-    .banner{
+@media (min-width: 769px) {
+    .banner {
         width: 100%;
         height: 30rem;
         background-repeat: no-repeat;
@@ -152,26 +172,30 @@ body {
         margin-bottom: 0;
         background-position: center;
     }
-    .ur-1{
-       
+
+    .ur-1 {
+
         background-image: url(../imagenes/1.jpg);
-        
-        
+
+
     }
-    
-    .ur-2{
+
+    .ur-2 {
         background-image: url(../imagenes/2.jpg);
     }
 }
+
 /* Menú */
 #menu {
     background-color: #fff;
     padding: 40px 0;
 }
-.descripcion{
+
+.descripcion {
     text-transform: uppercase;
     line-height: 2;
 }
+
 .categories {
     list-style: none;
     padding: 0;
@@ -228,7 +252,8 @@ body {
     color: #fff;
     padding: 40px 0;
 }
-.c-white{
+
+.c-white {
     color: #fff;
     text-transform: uppercase;
 }
@@ -238,13 +263,13 @@ body {
     text-align: center;
 }
 
-.iconos{
+.iconos {
     width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 20px;
-  
+
 }
 
 
@@ -258,21 +283,24 @@ body {
 #about h2 {
     font-size: 30px;
 }
-.ctn-footer{
+
+.ctn-footer {
     display: flex;
     flex-direction: column;
 }
 
-.adrees{
+.adrees {
     color: #ffcc33;
     margin-bottom: 10px;
 }
-.ctn-form{
+
+.ctn-form {
     background-color: #ffcc33;
     padding: 20px;
-    margin:10px auto;
+    margin: 10px auto;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     background-color: #000;
@@ -280,19 +308,23 @@ body {
     gap: 30px;
     padding: 20px;
 }
-@media (min-width: 769px){
-    .formulario{
+
+@media (min-width: 769px) {
+    .formulario {
         width: 40%;
         margin: 0 auto;
     }
 }
-.input{
+
+.input {
     padding: 10px;
 }
-.label{
+
+.label {
     color: #fff;
 }
-.submit{
+
+.submit {
     width: 150px;
     margin: 0 auto;
     padding: 10px 20px;
@@ -303,25 +335,88 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
-.submit:hover{
+
+.submit:hover {
     background-color: #f5cc51;
 }
-.tabla{
+
+/* Estilos para hacer la tabla receptiva */
+/* Define estilos generales para la tabla */
+table {
     width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px 0;
     background-color: #fff;
-    margin: 0 auto;
-    padding: 20px;
 }
-.tabla thead tr th{
-    border:solid 1px #f5cc51;
-    padding: 10px;
-}
-.tabla tbody tr td{
-    border:solid 1px #f5cc51;
+
+/* Define estilos para las celdas de la tabla */
+th,
+td {
     padding: 10px;
     text-align: center;
 }
-.boton-rojo{
+
+/* Define colores y bordes para las celdas */
+th {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+td {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+}
+
+/* Define estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .contenedor{
+        width: 100%;
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+
+    /* Estilos generales para la tabla */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-color: #fff;
+    }
+
+    /* Estilos para las filas y celdas */
+    tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+    }
+
+    th,
+    td {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Estilos para los encabezados */
+    th {
+        background-color: #f5cc51;
+        color: #fff;
+    }
+
+    /* Estilos para los datos */
+    td {
+        background-color: #f9f9f9;
+    }
+
+}
+
+.boton-rojo {
     background-color: rgb(231, 11, 11);
     border: none;
     padding: 15px 5px;
@@ -331,45 +426,51 @@ body {
     margin: 5px 0;
     text-align: center;
 }
-.boton-amarillo{
+
+.boton-amarillo {
     text-align: center;
     margin: 5px 0;
     display: block;
     text-decoration: none;
-    background-color:  #f5cc51;
+    background-color: #f5cc51;
     border: none;
     padding: 15px 5px;
     color: #000;
 }
-.btn-verde{
-    width:200px;
+
+.btn-verde {
+    width: 200px;
     text-align: center;
     margin: 15px auto;
     display: block;
     text-decoration: none;
-    background-color:  #008334;
+    background-color: #008334;
     border: none;
     padding: 15px 5px;
     color: #fff;
     font-weight: bold;
 }
-.alerta{
-    width:40%;
+
+.alerta {
+    width: 40%;
 
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
     margin: 10px auto;
 }
-.error{
+
+.error {
     color: #fff;
     background-color: red;
 }
-@media (max-width: 1200px){
-    .grid{
-        grid-template-columns: repeat(2,1fr);
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* Estilos de medios pequeños (por ejemplo, dispositivos móviles) */
 @media (max-width: 768px) {
     header h1 {
@@ -397,15 +498,21 @@ body {
     .categories a {
         font-size: 18px;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: 1fr;
     }
-    
+
 }
 
-.admin{
+.admin {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
     margin: 0 20px;
+}
+
+.admin:hover{
+    font-weight: bold;
+    color: #272626;
 }

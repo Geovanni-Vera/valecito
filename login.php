@@ -34,8 +34,11 @@ if ($conect) {
                 if($auth){
                     session_start();
                     $_SESSION["usuario"]=$pasdb['user'];
+                    $_SESSION["name"]=$pasdb['name'];
                     $_SESSION["login"]=true;
+                    
                     header('location:/valecito2.0/php/admin/index.php');
+                    
                 }else{
                     $errores[] = "Contraseña Invalida"; 
                 }

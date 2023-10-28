@@ -13,7 +13,7 @@ include '../templates/header.php';
 $db = new Database("localhost", "elvalecito", "root", "root");
 $conect = $db->connect();
 if ($conect) {
-    $sql_menu = "SELECT * FROM menu ORDER BY categoriaId";
+    $sql_menu = "SELECT menu.*, categorias.categoria FROM menu INNER JOIN categorias ON menu.categoriaId = categorias.id ORDER BY categoriaId;";
     $result_menu = $db->query($sql_menu);
 
     $sql_cat = "SELECT * FROM categorias;";
@@ -23,28 +23,27 @@ if ($conect) {
 <section class="contenedor bg-yellow">
     <h3 class="title center">Productos</h3>
     <a href="/valecito2.0/php/admin/crud/crear.php" class="btn-verde">Crear nuevo Producto</a>
-    <table class="tabla">
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>PRODUCTO</th>
                 <th>PRECIO</th>
                 <th>DESCRIPCION</th>
-                <th>CATEGORIA ID</th>
+                <th>CATEGORIA </th>
                 <th>ELIMINAR</th>
                 <th>ACTUALIZAR</th>
             </tr>
         </thead>
         <tbody>
-            <!--Muestra los resultados de la bd-->
+            <!-- Muestra los resultados de la base de datos -->
             <?php while ($row = $result_menu->fetch(PDO::FETCH_ASSOC)) : ?>
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['producto']; ?></td>
-
                     <td>$<?php echo $row['precio']; ?></td>
                     <td><?php echo $row['descripcion']; ?></td>
-                    <td><?php echo $row['categoriaId']; ?></td>
+                    <td><?php echo $row['categoria']; ?></td>
                     <!-- BOTONES -->
                     <td>
                         <form action="./crud/borrar.php" method="POST" class="w-100">
@@ -59,7 +58,6 @@ if ($conect) {
                 </tr>
             <?php endwhile; ?>
         </tbody>
-
     </table>
 
     <h3 class="title center">Categorias</h3>
