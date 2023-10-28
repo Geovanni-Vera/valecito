@@ -30,6 +30,18 @@ CREATE TABLE `usuarios` (
 INSERT INTO usuarios (user, password) VALUES ('geovanni.vera23@gmail.com', '$2y$10$FK3F.YSC2Yg.PAibj2xq3OEauRsVgT55b3AjYNkDrq0FIyY7tmYR.');
 
 
+INSERT INTO categorias (categoria)
+VALUES
+('hamburguesas'),
+('hotdogs'),
+('alitas'),
+('boneless'),
+('costillas'),
+('banderillas'),
+('acompañamientos'),
+('bebidas'),
+('malteadas'),
+('soda italiana');
 
 
 
