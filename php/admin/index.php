@@ -1,5 +1,4 @@
 <?php
-
 require '../config/database.php';
 require '../funciones/funciones.php';
 
@@ -57,7 +56,6 @@ if ($conect) {
             <?php endwhile; ?>
         </tbody>
     </table>
-
 
     <h3 class="title center">Categorias</h3>
     <a href="/valecito2.0/php/admin/crud/crear-categoria.php" class="btn-verde">Crear nueva Categoria</a>

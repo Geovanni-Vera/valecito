@@ -18,7 +18,6 @@ include 'php/templates/header.php';
         <?php include 'php/templates/menunav.php' ?>
 
         <?php include 'php/templates/menu/menu.php' ?>
-
     </div>
 </section>
 
